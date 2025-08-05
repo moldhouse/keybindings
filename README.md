@@ -20,6 +20,7 @@ These keybindings use native vim navigation `(j, k) + cmd` for navigating these 
 - Respects Cursor keybindings
   - `cmd+k` for inline edit and terminal edit
   - `cmd+r` for new chat when chat open
+  - `cmd+shift+l` for inserting selection into chat when in visual mode
 
 ### TODO
 
