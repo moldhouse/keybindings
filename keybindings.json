@@ -236,12 +236,12 @@
     // Coding
     // Move selected lines up and down
     {
-        "key": "cmd+j",
+        "key": "cmd+shift+j",
         "command": "editor.action.moveLinesDownAction",
         "when": "vim.mode == 'VisualLine' && editorTextFocus"
     },
     {
-        "key": "cmd+k",
+        "key": "cmd+shift+k",
         "command": "editor.action.moveLinesUpAction",
         "when": "vim.mode == 'VisualLine' && editorTextFocus"
     },
