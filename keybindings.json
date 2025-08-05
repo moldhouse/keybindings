@@ -329,16 +329,6 @@
         "command": "workbench.action.toggleAuxiliaryBar"
     },
     {
-        "key": "cmd+n",
-        "command": "workbench.action.chat.newChat",
-        "when": "chatIsEnabled && inChat && chatLocation != 'editing-session'"
-    },
-    {
-        "key": "ctrl+l",
-        "command": "-workbench.action.chat.newChat",
-        "when": "chatIsEnabled && inChat && chatLocation != 'editing-session'"
-    },
-    {
         "key": "g g",
         "command": "cursorTop",
         "when": "vim.mode == 'Normal' && editorTextFocus"
