@@ -6,7 +6,7 @@ When using Vim Keybindings in VSCode, there are still times one might need to re
 
 These keybindings use native vim navigation `(j, k) + cmd` for navigating these sections.
 
-### Features
+## Features
 
 - Navigate all drop down menus with `cmd+j`/`cmd+k`
 - Navigate left/right with `cmd+h`/`cmd+l`
@@ -60,3 +60,7 @@ for Cursor, you can update the file with:
 ```sh
 cp ~/Library/Application\ Support/Cursor/User/keybindings.json keybindings.json
 ```
+
+## Debugging
+
+The VSCode feature `Developer: Toggle Keyboard Shortcuts Troubleshooting` can be used to observe the keybindings in action.
