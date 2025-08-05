@@ -17,6 +17,9 @@ These keybindings use native vim navigation `(j, k) + cmd` for navigating these 
 - Close current editor/terminal with `cmd+w`
 - Show/hide the sidebars with `cmd+e` and `cmd+;`
 - Navigate search results with `j`/`k`
+- Respects Cursor keybindings
+  - `cmd+k` for inline edit and terminal edit
+  - `cmd+r` for new chat when chat open
 
 ### TODO
 
