@@ -262,13 +262,8 @@
     },
     // Navigate search results
     {
-        "key": "cmd+j",
-        "command": "search.focus.nextInputBox",
-        "when": "searchInputBoxFocus"
-    },
-    {
-        "key": "cmd+k",
-        "command": "search.focus.previousInputBox",
+        "key": "cmd+shift+j",
+        "command": "search.action.focusSearchList",
         "when": "searchViewletVisible && searchViewletFocus"
     },
     // Navigate windows
@@ -384,7 +379,9 @@
     {
         "key": "shift+cmd+l",
         "command": "workbench.action.terminal.split",
-        "args": { "splitMode": "right" },
+        "args": {
+            "splitMode": "right"
+        },
         "when": "terminalFocus"
     },
     {
