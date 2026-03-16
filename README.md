@@ -20,7 +20,7 @@ These keybindings use native vim navigation `(j, k) + cmd` for navigating these 
 - Respects Cursor keybindings
   - `cmd+k` for inline edit and terminal edit
   - `cmd+r` for new chat when chat open
-  - `cmd+shift+l` for inserting selection into chat when in visual mode
+  - `cmd+shift+h`/`cmd+shift+l` for moving editors between groups (including terminal editors)
 
 ### TODO
 
@@ -29,37 +29,27 @@ These keybindings use native vim navigation `(j, k) + cmd` for navigating these 
 
 ## Usage
 
-These keybindings work for both VSCode and Cursor.
+These keybindings work for both VSCode and Cursor. Use symlinks so changes sync automatically.
 
 ### VSCode
 
 ```sh
-cp keybindings.json ~/Library/Application\ Support/Code/User/keybindings.json
+ln -sf "$(pwd)/keybindings.json" ~/Library/Application\ Support/Code/User/keybindings.json
 ```
 
 ### Cursor
 
 For these keybindings to work, make sure to set `workbench.activityBar.orientation` to `vertical` in your settings.json file.
 
-Then, copy the keybindings:
+Then, symlink the keybindings:
 
 ```sh
-cp keybindings.json ~/Library/Application\ Support/Cursor/User/keybindings.json
+ln -sf "$(pwd)/keybindings.json" ~/Library/Application\ Support/Cursor/User/keybindings.json
 ```
 
 ## Contributing
 
-If you made changes to the keybindings and you are using VSCode, you can update this repository with:
-
-```sh
-cp ~/Library/Application\ Support/Code/User/keybindings.json keybindings.json
-```
-
-for Cursor, you can update the file with:
-
-```sh
-cp ~/Library/Application\ Support/Cursor/User/keybindings.json keybindings.json
-```
+Once symlinked, edits to `keybindings.json` in this repository apply automatically in VSCode and Cursor.
 
 ## Debugging
 

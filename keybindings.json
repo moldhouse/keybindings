@@ -53,6 +53,14 @@
         "command": "-workbench.action.showAllSymbols"
     },
     {
+        "key": "cmd+t",
+        "command": "workbench.action.createTerminalEditor"
+    },
+    {
+        "key": "cmd+shift+t",
+        "command": "workbench.action.createTerminalEditorSide"
+    },
+    {
         "key": "shift+cmd+s",
         "command": "-workbench.action.files.saveAs"
     },
@@ -353,13 +361,19 @@
     },
     {
         "key": "shift+cmd+l",
-        "command": "workbench.action.moveEditorToNextGroup",
-        "when": "editorFocus && vim.mode != 'VisualLine'"
+        "command": "-composer.newAgentChat"
+    },
+    {
+        "key": "shift+cmd+l",
+        "command": "-aichat.insertselectionintochat"
+    },
+    {
+        "key": "shift+cmd+l",
+        "command": "workbench.action.moveEditorToNextGroup"
     },
     {
         "key": "shift+cmd+h",
-        "command": "workbench.action.moveEditorToPreviousGroup",
-        "when": "editorFocus"
+        "command": "workbench.action.moveEditorToPreviousGroup"
     },
     {
         "key": "shift+cmd+l",
@@ -367,7 +381,7 @@
         "args": {
             "splitMode": "right"
         },
-        "when": "terminalFocus"
+        "when": "terminalFocus && panelFocus"
     },
     {
         "key": "cmd+l",
