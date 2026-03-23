@@ -393,6 +393,27 @@
         "command": "workbench.action.terminal.focusPreviousPane",
         "when": "terminalFocus"
     },
+    // Open lazygit in a side terminal editor
+    {
+        "key": "cmd+g",
+        "command": "runCommands",
+        "args": {
+            "commands": [
+                {
+                    "command": "workbench.action.terminal.newWithProfile",
+                    "args": { "profileName": "lazygit", "location": "editor" }
+                },
+                { "command": "workbench.action.moveEditorToNextGroup" }
+            ]
+        }
+    },
+    // Open claude in a terminal editor
+    {
+        "key": "cmd+c",
+        "command": "workbench.action.terminal.newWithProfile",
+        "args": { "profileName": "claude", "location": "editor" },
+        "when": "vim.mode == 'Normal' && !terminalFocus"
+    },
     {
         "key": "shift+cmd+=",
         "command": "workbench.action.increaseViewSize"
