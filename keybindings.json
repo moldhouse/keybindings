@@ -409,10 +409,10 @@
     },
     // Open claude in a terminal editor
     {
-        "key": "cmd+c",
+        "key": "cmd+shift+c",
         "command": "workbench.action.terminal.newWithProfile",
         "args": { "profileName": "claude", "location": "editor" },
-        "when": "vim.mode == 'Normal' && !terminalFocus"
+        "when": "!terminalFocus"
     },
     {
         "key": "shift+cmd+=",
