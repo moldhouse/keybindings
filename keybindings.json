@@ -369,11 +369,11 @@
     },
     {
         "key": "shift+cmd+l",
-        "command": "workbench.action.moveEditorToNextGroup"
+        "command": "workbench.action.moveEditorToRightGroup"
     },
     {
         "key": "shift+cmd+h",
-        "command": "workbench.action.moveEditorToPreviousGroup"
+        "command": "workbench.action.moveEditorToLeftGroup"
     },
     {
         "key": "shift+cmd+l",
@@ -403,7 +403,7 @@
                     "command": "workbench.action.terminal.newWithProfile",
                     "args": { "profileName": "lazygit", "location": "editor" }
                 },
-                { "command": "workbench.action.moveEditorToNextGroup" }
+                { "command": "workbench.action.moveEditorToRightGroup" }
             ]
         }
     },
