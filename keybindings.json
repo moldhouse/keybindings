@@ -143,16 +143,6 @@
         "key": "ctrl+w",
         "command": "-workbench.action.switchWindow"
     },
-    {
-        "key": "cmd+h",
-        "command": "workbench.action.navigateLeft",
-        "when": "!terminal.visible"
-    },
-    {
-        "key": "cmd+l",
-        "command": "workbench.action.navigateRight",
-        "when": "!terminal.visible"
-    },
     // cycle through open editors
     {
         "key": "cmd+,",
@@ -269,14 +259,16 @@
         "command": "search.action.focusSearchList",
         "when": "searchViewletVisible && searchViewletFocus"
     },
-    // Navigate windows
+    // Navigate between editor groups (not into panel)
     {
         "key": "cmd+h",
-        "command": "workbench.action.navigateLeft"
+        "command": "workbench.action.navigateLeft",
+        "when": "!panelFocus"
     },
     {
         "key": "cmd+l",
-        "command": "workbench.action.navigateRight"
+        "command": "workbench.action.navigateRight",
+        "when": "!panelFocus"
     },
     // File Explorer
     {
@@ -343,21 +335,23 @@
     },
     {
         "key": "cmd+n",
-        "command": "workbench.action.previousEditor"
+        "command": "workbench.action.previousEditor",
+        "when": "!panelFocus"
     },
     {
         "key": "cmd+m",
-        "command": "workbench.action.nextEditor"
+        "command": "workbench.action.nextEditor",
+        "when": "!panelFocus"
     },
     {
         "key": "cmd+m",
         "command": "workbench.action.terminal.focusNext",
-        "when": "terminalFocus && terminalHasBeenCreated && !terminalEditorFocus || terminalFocus && terminalProcessSupported && !terminalEditorFocus"
+        "when": "panelFocus"
     },
     {
         "key": "cmd+n",
         "command": "workbench.action.terminal.focusPrevious",
-        "when": "terminalFocus && terminalHasBeenCreated && !terminalEditorFocus || terminalFocus && terminalProcessSupported && !terminalEditorFocus"
+        "when": "panelFocus"
     },
     {
         "key": "shift+cmd+l",
@@ -386,12 +380,12 @@
     {
         "key": "cmd+l",
         "command": "workbench.action.terminal.focusNextPane",
-        "when": "terminalFocus"
+        "when": "terminalFocus && panelFocus"
     },
     {
         "key": "cmd+h",
         "command": "workbench.action.terminal.focusPreviousPane",
-        "when": "terminalFocus"
+        "when": "terminalFocus && panelFocus"
     },
     // Open lazygit in a side terminal editor
     {
