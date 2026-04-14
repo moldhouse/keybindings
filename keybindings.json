@@ -133,7 +133,7 @@
     {
         "key": "cmd+w",
         "command": "workbench.action.terminal.kill",
-        "when": "terminalFocus"
+        "when": "terminalFocus && !terminalEditorFocus"
     },
     {
         "key": "cmd+b",
